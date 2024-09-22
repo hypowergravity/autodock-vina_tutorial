@@ -1,0 +1,9 @@
+RMSD of conformer 1 is 0.8255809545516968
+RMSD of conformer 2 is 0.9544541239738464
+RMSD of conformer 3 is 0.9250214695930481
+RMSD of conformer 4 is 0.785442054271698
+RMSD of conformer 5 is 0.6842533349990845
+RMSD of conformer 6 is 0.7823143005371094
+RMSD of conformer 7 is 0.9257183074951172
+RMSD of conformer 8 is 0.616606593132019
+RMSD of conformer 9 is 0.7038976550102234

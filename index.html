@@ -1,0 +1,357 @@
+<!doctype html>
+<html >
+<head>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!--[if lt IE 9]>
+                <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+        <![endif]-->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+
+    <!-- <link rel="stylesheet" type="text/css" href="template.css" /> -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/template.css" />
+
+    <link href="https://vjs.zencdn.net/5.4.4/video-js.css" rel="stylesheet" />
+
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+    <!-- <script type='text/javascript' src='menu/js/jquery.cookie.js'></script> -->
+    <!-- <script type='text/javascript' src='menu/js/jquery.hoverIntent.minified.js'></script> -->
+    <!-- <script type='text/javascript' src='menu/js/jquery.dcjqaccordion.2.7.min.js'></script> -->
+
+    <!-- <link href="menu/css/skins/blue.css" rel="stylesheet" type="text/css" /> -->
+    <!-- <link href="menu/css/skins/graphite.css" rel="stylesheet" type="text/css" /> -->
+    <!-- <link href="menu/css/skins/grey.css" rel="stylesheet" type="text/css" /> -->
+  
+    <!-- <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script> -->
+        
+  
+    <!-- <script src="script.js"></script> -->
+  
+    <!-- <script src="jquery.sticky-kit.js "></script> -->
+    <script type='text/javascript' src='https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/js/jquery.cookie.js'></script>
+    <script type='text/javascript' src='https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/js/jquery.hoverIntent.minified.js'></script>
+    <script type='text/javascript' src='https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/js/jquery.dcjqaccordion.2.7.min.js'></script>
+
+    <link href="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/css/skins/blue.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/css/skins/graphite.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/css/skins/grey.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/gh/ryangrose/easy-pandoc-templates@948e28e5/css/elegant_bootstrap.css" rel="stylesheet" type="text/css" />
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+    <script src="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/script.js"></script>
+  
+    <script src="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/jquery.sticky-kit.js"></script>
+    <meta name="generator" content="pandoc" />
+  <meta name="author" content="Sriram Srinivasa Raghavan" />
+  <title>Docking Beta-lactamase with purpurogalin</title>
+  <style type="text/css">code{white-space: pre;}</style>
+</head>
+<body>
+
+    
+    <div class="navbar navbar-static-top">
+    <div class="navbar-inner">
+      <div class="container">
+        <span class="doc-title">Docking Beta-lactamase with
+purpurogalin</span>
+        <ul class="nav pull-right doc-info">
+                    <li><p class="navbar-text">Sriram Srinivasa
+Raghavan</p></li>
+                              <li><p class="navbar-text">24/09/2023</p></li>
+                  </ul>
+      </div>
+    </div>
+  </div>
+    <div class="container">
+    <div class="row">
+            <div id="TOC" class="span3">
+        <div class="well toc">
+
+        <ul>
+        <li><a href="#autodock" id="toc-autodock">Autodock</a>
+        <ul>
+        <li><a href="#installation."
+        id="toc-installation.">Installation.</a>
+        <ul>
+        <li><a href="#installation-of-adfr"
+        id="toc-installation-of-adfr">installation of ADFR</a></li>
+        <li><a href="#installation-of-meeko"
+        id="toc-installation-of-meeko">installation of Meeko</a></li>
+        </ul></li>
+        <li><a
+        href="#installation-of-the-adt-tools-for-grid-visualization."
+        id="toc-installation-of-the-adt-tools-for-grid-visualization.">installation
+        of the ADT tools for grid visualization.</a>
+        <ul>
+        <li><a href="#autogrid-installation"
+        id="toc-autogrid-installation">autogrid installation</a></li>
+        </ul></li>
+        </ul></li>
+        <li><a href="#tutorial-to-dock-zinc-related-enzyme."
+        id="toc-tutorial-to-dock-zinc-related-enzyme.">Tutorial to dock
+        zinc related enzyme.</a>
+        <ul>
+        <li><a href="#tutorial" id="toc-tutorial">Tutorial</a></li>
+        <li><a href="#to-generate-the-affinity-map"
+        id="toc-to-generate-the-affinity-map">to generate the affinity
+        map</a></li>
+        <li><a href="#inbound-ligand" id="toc-inbound-ligand">inbound
+        ligand</a></li>
+        <li><a href="#purpurogalin"
+        id="toc-purpurogalin">purpurogalin</a></li>
+        <li><a href="#clavulanate"
+        id="toc-clavulanate">clavulanate</a></li>
+        <li><a href="#without-zinc-inbound-ligand"
+        id="toc-without-zinc-inbound-ligand">without zinc inbound
+        ligand</a></li>
+        <li><a href="#without-zinc-purpurogalin-ligand"
+        id="toc-without-zinc-purpurogalin-ligand">without zinc
+        purpurogalin ligand</a></li>
+        <li><a href="#without-zinc-clavulanate-ligand"
+        id="toc-without-zinc-clavulanate-ligand">without zinc
+        clavulanate ligand</a></li>
+        <li><a
+        href="#rmsd-calculation-of-co-crystal-and-docked-conformer-in-pymol"
+        id="toc-rmsd-calculation-of-co-crystal-and-docked-conformer-in-pymol">RMSD
+        calculation of co-crystal and docked conformer in pymol</a></li>
+        <li><a href="#image-of-the-crystal-and-docked-structure"
+        id="toc-image-of-the-crystal-and-docked-structure">Image of the
+        crystal and docked structure</a></li>
+        <li><a
+        href="#docking-with-reference-compound-potassium-clavulanate-and-purpurogalin."
+        id="toc-docking-with-reference-compound-potassium-clavulanate-and-purpurogalin.">docking
+        with reference compound potassium clavulanate and
+        purpurogalin.</a></li>
+        </ul></li>
+        </ul>
+
+        </div>
+      </div>
+            <div class="span9">
+
+      
+      <h1 id="autodock">Autodock</h1>
+<p>Objective to dock <a
+href="https://pubchem.ncbi.nlm.nih.gov/compound/5281571">Purpurogalline</a>
+to zinc dependent beta-lactamase along with the refernce compound .</p>
+<h2 id="installation.">Installation.</h2>
+<p>The installation of the Autodock vina can be followed from the given
+<a
+href="https://autodock-vina.readthedocs.io/en/latest/installation.html">website</a>.</p>
+<p>It is recommended to create a conda environment for installation of
+the autodock vina.</p>
+<pre class="bash"><code>$ conda create -n vina python=3
+$ conda activate vina
+$ conda config --env --add channels conda-forge
+# install the dependency
+conda install -c conda-forge numpy swig boost-cpp sphinx sphinx_rtd_theme
+# install using source code.
+git clone https://github.com/ccsb-scripps/AutoDock-Vina
+
+cd AutoDock-Vina/build/python</code></pre>
+<p>The autodock also needs other dependency such as ADFR and Meeko</p>
+<h3 id="installation-of-adfr">installation of ADFR</h3>
+<p>Since macos does not allows non standard apps to get install we have
+to give a temporary access to the software.</p>
+<pre class="bash"><code>sudo spctl --master-disable</code></pre>
+<p>Then install the ADFR</p>
+<p>For that we have run</p>
+<pre class="bash"><code>./install.sh
+# export the path in ~/.bashrc or  ~/.bash_profile for macos
+export PATH=/Users/sriram/Documents/thanet/docking/ADFRsuite_x86_64Darwin_1.0/bin:$PATH</code></pre>
+<pre class="bash"><code># enabling the security
+sudo spctl --master-enable</code></pre>
+<h3 id="installation-of-meeko">installation of Meeko</h3>
+<p>Meeko can be installed in the same conda enviroment as of the
+autodock vina</p>
+<pre class="bash"><code>conda install -c conda-forge numpy openbabel scipy rdkit
+pip install meeko</code></pre>
+<h2
+id="installation-of-the-adt-tools-for-grid-visualization.">installation
+of the ADT tools for grid visualization.</h2>
+<p>Install <a
+href="https://ccsb.scripps.edu/mgltools/downloads/">mgltools</a> for
+particular version using the following site</p>
+<p>update in bash profile</p>
+<pre><code>~/.bashrc - export PATH=&quot;/Users/Shared/MGLTools/1.5.7/bin:&quot;$PATH</code></pre>
+<p>adt GUI can be opened by <code>adt</code> command if path is set.</p>
+<h3 id="autogrid-installation">autogrid installation</h3>
+<p>Binary of the autodock4 can be downloaded from this <a
+href="https://autodock.scripps.edu/download-autodock4/">website</a> Only
+path has to be specified in basrc for two binary files such as autogrid4
+and autodock4.</p>
+<h1 id="tutorial-to-dock-zinc-related-enzyme.">Tutorial to dock zinc
+related enzyme.</h1>
+<p>Beta-lactamase is an enzyme that are responsible for bacterial
+resistance to beta-lactam antibiotics, such as penicillins and
+cephalosporins. This enzymes hydrolyze the beta-lactam ring of the
+antibiotic, rendering it ineffective and allowing the bacteria to
+survive. The beta-lactamase enzymes are classified into different
+classes (Class A, Class B, Class C, and Class D), based on their
+molecular structure and mechanism of action. Zn-Dependent
+Metallo-Beta-Lactamase in Bacillus cereus corresponds to Class B
+beta-lactamases, also known as metallo-beta-lactamases (MBLs), are
+Zn-dependent enzymes. Unlike serine beta-lactamases, they have a metal
+ion at the active site that facilitates the hydrolysis of the
+beta-lactam ring. Bacillus cereus is one of the bacterial species that
+produce Zn-dependent metallo-beta-lactamase. Catalysis</p>
+<p>In the Zn-dependent MBLs, one or two zinc ions are crucial for
+catalysis. In the structure take 4NQ6 there are two zinc complexed with
+bound inhibitor. Generally the zinc ions are located at the active site
+of the enzyme and coordinate the water molecules, which are subsequently
+involved in the hydrolysis of the beta-lactam ring. The catalytic
+mechanism often involves the formation of a transient enzyme-substrate
+complex, followed by hydrolysis, leading to the inactivation of the
+antibiotic. Catalytic Site</p>
+<p>The catalytic site in Zn-dependent MBLs usually comprises specific
+amino acid residues that coordinate the zinc ions. These may include
+histidine, aspartate, and sometimes cysteine residues. In the case of
+the 4NQ6 it is HIS 81,83,144,205 ASP 85 and cysteine 163.</p>
+<p>The zinc ions play a critical role in the catalytic activity of MBLs.
+They stabilize the transition state during hydrolysis, lowering the
+activation energy required for the reaction. Moreover, they help in
+orienting the water molecules and the substrate at the active site. In
+the current beta-lactamse , the presence of two zinc ions can
+dramatically increase the hydrolytic efficiency.</p>
+<p>The study of Bacillus cereus Zn-dependent metallo-beta-lactamase and
+its catalytic site is critical for developing new antibiotics or
+inhibitors that can effectively target this enzyme. So previously
+obtained experimental compounds was taken for docking with zinc bound
+structure.</p>
+<p>The 4NQ6 have negative density at zinc ions in the given structure,
+while the position in the zinc can be verified in other structures. <img
+src="image.png" alt="negative image" />. The same structure was taken as
+the it has a ligand bond structure. Negative density suggest absence of
+the electron density at the site.</p>
+<h3 id="tutorial">Tutorial</h3>
+<p>Use chimera to prepare protein and ligand using dockprep and save as
+pdb separately.</p>
+<pre><code>prepare_receptor -r 4nq6.pdb -o protein.pdbqt -U nphs_lps_waters
+pythonsh /Users/sriram/Documents/thanet/autodockZN_files/zinc_pseudo.py -r hydrogen_added_4nq6.pdbqt -o protein_tz.pdbqt</code></pre>
+<p>use the ligand generated using the chimera and load in the ADT tool
+and save as .pdbqt file.</p>
+<h3 id="to-generate-the-affinity-map">to generate the affinity map</h3>
+<h3 id="inbound-ligand">inbound ligand</h3>
+<pre class="bash"><code>pythonsh autodockZN_files/prepare_gpf4zn.py -l autodock_protein/inbound_ligand/4nq6_ligand.pdbqt -r autodock_protein/protein_tz.pdbqt \
+-o autodock_protein/inbound_ligand/protein_tz.gpf -p npts=40,40,40 -p gridcenter=9.97,9.359,26.102 \
+–p parameter_file=autodockZN_files/AD4Zn.dat
+
+./autogrid4 -p autodock_protein/inbound_ligand/protein_tz.gpf -l autodock_protein/inbound_ligand/protein_tz.glg
+
+vina --ligand autodock_protein/inbound_ligand/4nq6_ligand.pdbqt --maps autodock_protein/protein_tz --scoring ad4 \
+--exhaustiveness 32 --out autodock_protein/inbound_ligand/4nq6_ligand_out.pdbqt | tee autodock_protein/inbound_ligand/4nq6_ligand.log</code></pre>
+<h3 id="purpurogalin">purpurogalin</h3>
+<pre class="bash"><code>pythonsh autodockZN_files/prepare_gpf4zn.py -l autodock_protein/ref_potassium_clavulanate/clavulanate.pdbqt -r autodock_protein/protein_tz.pdbqt \
+-o autodock_protein/ref_potassium_clavulanate/protein_tz_clavulanate.gpf -p npts=40,40,40 -p gridcenter=9.97,9.359,26.102 \
+–p parameter_file=autodockZN_files/AD4Zn.dat
+
+./autogrid4 -p autodock_protein/pur/protein_tz_pur.gpf -l autodock_protein/pur/protein_tz_pur.glg
+
+vina --ligand autodock_protein/pur/pur.pdbqt --maps autodock_protein/protein_tz --scoring ad4 \
+ --exhaustiveness 32 --out autodock_protein/pur/pur_out.pdbqt</code></pre>
+<h3 id="clavulanate">clavulanate</h3>
+<pre class="bash"><code>pythonsh autodockZN_files/prepare_gpf4zn.py -l autodock_protein/ref_potassium_clavulanate/clavulanate.pdbqt -r autodock_protein/protein_tz.pdbqt \
+-o autodock_protein/ref_potassium_clavulanate/protein_tz_clavulanate.gpf -p npts=40,40,40 -p gridcenter=9.97,9.359,26.102 \
+–p parameter_file=autodockZN_files/AD4Zn.dat
+
+./autogrid4 -p autodock_protein/ref_potassium_clavulanate/protein_tz_clavulanate.gpf -l autodock_protein/ref_potassium_clavulanate/protein_tz_clavulanate.glg
+
+vina --ligand autodock_protein/ref_potassium_clavulanate/clavulanate.pdbqt --maps autodock_protein/protein_tz --scoring ad4 \
+ --exhaustiveness 32 --out autodock_protein/ref_potassium_clavulanate/clavulanate_out.pdbqt | tee autodock_protein/ref_potassium_clavulanate/clavulanate.log</code></pre>
+<h3 id="without-zinc-inbound-ligand">without zinc inbound ligand</h3>
+<pre class="bash"><code>pythonsh autodockZN_files/prepare_gpf.py -l autodock_protein/inbound_ligand_without_zn/4nq6_ligand.pdbqt -r autodock_protein/inbound_ligand_without_zn/hydrogen_added_4nq6_no_zn.pdbqt \
+-o autodock_protein/inbound_ligand_without_zn/protein_inbound_ligand_without_zn.gpf -p npts=40,40,40 -p gridcenter=9.97,9.359,26.102
+
+./autogrid4 -p autodock_protein/inbound_ligand_without_zn/protein_inbound_ligand_without_zn.gpf -l autodock_protein/inbound_ligand_without_zn/protein_inbound_ligand_without_zn.glg
+
+vina --ligand autodock_protein/inbound_ligand_without_zn/4nq6_ligand.pdbqt --maps autodock_protein/hydrogen_added_4nq6_no_zn --scoring ad4 \
+ --exhaustiveness 32 --out inbound_ligand_without_zn/4nq6_ligand_out.pdbqt | tee inbound_ligand_without_zn/4nq6_ligand_out.log</code></pre>
+<h3 id="without-zinc-purpurogalin-ligand">without zinc purpurogalin
+ligand</h3>
+<pre class="bash"><code>pythonsh autodockZN_files/prepare_gpf.py -l autodock_protein/pur_no_zn/pur.pdbqt -r autodock_protein/hydrogen_added_4nq6_no_zn.pdbqt \
+-o autodock_protein/pur_no_zn/pur_ligand_without_zn.gpf -p npts=40,40,40 -p gridcenter=9.97,9.359,26.102
+
+./autogrid4 -p autodock_protein/pur_no_zn/pur_ligand_without_zn.gpf -l autodock_protein/pur_no_zn/pur_ligand_without_zn.glg
+
+vina --ligand autodock_protein/pur_no_zn/pur.pdbqt --maps autodock_protein/hydrogen_added_4nq6_no_zn --scoring ad4 \
+ --exhaustiveness 32 --out autodock_protein/pur_no_zn/pur_ligand_without_zn_out.pdbqt | tee autodock_protein/pur_no_zn/pur_ligand_without_zn_out.log</code></pre>
+<h3 id="without-zinc-clavulanate-ligand">without zinc clavulanate
+ligand</h3>
+<pre class="bash"><code>pythonsh autodockZN_files/prepare_gpf.py \
+-l autodock_protein/ref_potassium_clavulanate_no_zn/clavulanate.pdbqt -r autodock_protein/hydrogen_added_4nq6_no_zn.pdbqt \
+-o autodock_protein/ref_potassium_clavulanate_no_zn/clavulanate.gpf -p npts=40,40,40 -p gridcenter=9.97,9.359,26.102
+
+./autogrid4 -p autodock_protein/ref_potassium_clavulanate_no_zn/clavulanate.gpf -l autodock_protein/ref_potassium_clavulanate_no_zn/clavulanate_ligand_without_zn.glg
+
+vina --ligand autodock_protein/ref_potassium_clavulanate_no_zn/clavulanate.pdbqt --maps autodock_protein/hydrogen_added_4nq6_no_zn --scoring ad4 \
+ --exhaustiveness 32 --out autodock_protein/ref_potassium_clavulanate_no_zn/clavulanate.pdbqt_ligand_without_zn_out.pdbqt | tee autodock_protein/ref_potassium_clavulanate_no_zn/clavulanate.pdbqt_ligand_without_zn_out.log</code></pre>
+<h3
+id="rmsd-calculation-of-co-crystal-and-docked-conformer-in-pymol">RMSD
+calculation of co-crystal and docked conformer in pymol</h3>
+<p>```py pymol # load the co-crystal as reference load
+4nq6_ligand.pdbqt,crystal # load the docked structure</p>
+<p>load 4nq6_ligand_out.pdbqt, docked</p>
+<p>load autodoc_protein/hydrogen_added_4nq6_no_zn.pdb,protein_no_zn load
+autodoc_protein/hydrogen_added_4nq6.pdb, protein</p>
+<pre><code>
+print(cmd.count_states(&quot;docked&quot;))
+
+```python
+python
+cmd.split_states(&quot;docked&quot;)
+f = open(&quot;rmsd_crystal.txt&quot;,&quot;w&quot;)
+for state in range(1,cmd.count_states(&quot;docked&quot;) +1):
+    cmd.create(f&quot;protein_complex_%.4d&quot;%state,f&quot;protein or docked_%.4d&quot;%state)
+    r = cmd.rms(f&quot;docked_%.4d&quot;%state,&quot;crystal&quot;)
+    print(f&quot;RMSD of conformer %s is %s&quot;%(state,r))
+    f.write(f&quot;RMSD of conformer %s is %s\n&quot;%(state,r))
+    cmd.save(f&quot;protein_complex_%.4d.pdb&quot;%state,f&quot;protein_complex_%.4d&quot;%state)
+    cmd.delete(f&quot;protein_complex_%.4d&quot;%state)
+f.close()
+
+cmd.delete(&quot;docked_*&quot;)
+python end</code></pre>
+<p>pdb 4nq6 |Conformers| RMSD score of co-crystal ligand with zinc
+(<span class="math inline">$\AA$</span>) | without zinc (<span
+class="math inline">$\AA$</span>) |Docking score with zinc ($kcal mol^-1
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="prefix">|</mo><mi>D</mi><mi>o</mi><mi>c</mi><mi>k</mi><mi>i</mi><mi>n</mi><mi>g</mi><mi>s</mi><mi>c</mi><mi>o</mi><mi>r</mi><mi>e</mi><mi>w</mi><mi>i</mi><mi>t</mi><mi>h</mi><mi>o</mi><mi>u</mi><mi>t</mi><mi>z</mi><mi>i</mi><mi>n</mi><mi>c</mi><mo stretchy="false" form="prefix">(</mo></mrow><annotation encoding="application/x-tex">)| Docking score without zinc (</annotation></semantics></math>kcal
+mol^-1 $) | |—-|—-|—-|—-|—-| |1|0.825|0.909|-5.19|-4.926|
+|2|0.954|1.040|-5.165|-4.914| |3|0.925|0.824|-5.002|-4.825|
+|4|0.785|0.783|-4.857|-4.557| |5|0.684|0.685|-4.818|-4.485|
+|6|0.782|0.867|-4.618|-4.456| |7|0.925|0.384|-4.476|-4.299|
+|8|0.616|0.559|-4.452|-4.251| |9|0.703|0.706|-4.409|-4.078|</p>
+<h3 id="image-of-the-crystal-and-docked-structure">Image of the crystal
+and docked structure</h3>
+<p>The above table highlights the rmsd profile of the docked structure
+with the co-crystal. In the following image, docked co-crystal is shown
+in green stick representaion, superimposed to the crystal structre. The
+ligand bound with and without zinc has simialr pose but certain,
+salt-bridge and metal-coordination is lost during docking.</p>
+<p><img src="image_complex_1.png" alt="complexed image" />.</p>
+<h3
+id="docking-with-reference-compound-potassium-clavulanate-and-purpurogalin.">docking
+with reference compound potassium clavulanate and purpurogalin.</h3>
+<p>the docking results of both compunds are similar intems of docking
+score. The best pose of reference compound docked to receptor is shown
+below where clavulanate is shown in light blue stick representation, the
+docking score of the reference compound with and without zinc are
+-4.401,-4.272 respectively. <img src="image_complex_1_ref.png"
+alt="complexed Zn-dependent MBLs with clavulanate" /></p>
+<p>The docking result of the purpurogalin to the receptor is shown below
+where purpurogalin is shown in light blue stick representation, the
+docking score of the reference compound with and without zinc are
+-4.846,-4.631 respectively. <img src="image_complex_1_pur.png"
+alt="complexed Zn-dependent MBLs with purpurogalin" />.</p>
+<p>From interaction analysis, many interactions with the surrounding
+residues are conserved but certain saltbridges in the crystallographic
+structure is not observed. This can be investigaed in molecular
+dynamics.</p>
+            </div>
+    </div>
+  </div>
+  <script src="https://vjs.zencdn.net/5.4.4/video.js"></script>
+
+</body>
+</html>

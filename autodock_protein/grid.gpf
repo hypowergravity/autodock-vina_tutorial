@@ -1,0 +1,15 @@
+npts 40 40 40                        # num.grid points in xyz
+gridfld hydrogen_added_4nq6.maps.fld # grid_data_file
+spacing 0.375                        # spacing(A)
+receptor_types A C H HD N NA OA SA Zn # receptor atom types
+ligand_types C SA OA N               # ligand atom types
+receptor hydrogen_added_4nq6.pdbqt   # macromolecule
+gridcenter 9.977 9.359 26.102        # xyz-coordinates or auto
+smooth 0.5                           # store minimum energy w/in rad(A)
+map hydrogen_added_4nq6.C.map        # atom-specific affinity map
+map hydrogen_added_4nq6.SA.map       # atom-specific affinity map
+map hydrogen_added_4nq6.OA.map       # atom-specific affinity map
+map hydrogen_added_4nq6.N.map        # atom-specific affinity map
+elecmap hydrogen_added_4nq6.e.map    # electrostatic potential map
+dsolvmap hydrogen_added_4nq6.d.map              # desolvation potential map
+dielectric -0.1465                   # <0, AD4 distance-dep.diel;>0, constant

@@ -1,0 +1,49 @@
+Moffat, K. Time-Resolved macromolecular crystallography. Annual Review of Biophysics and Biophysical Chemistry 18, 309–332 (1989).
+Moffat, K. Time-Resolved Biochemical Crystallography: A Mechanistic perspective. Chemical Reviews 101, 1569–1582 (2001).
+Bourgeois, D. & Weik, M. H. Kinetic protein crystallography: a tool to watch proteins in action. Crystallography Reviews 15, 87–118 (2009).
+Aller, P. & Orville, A. M. Dynamic structural biology experiments at XFEL or synchrotron sources. in Methods in molecular biology (ed. Structural Proteomics) vol. 2305 203–228 (Humana, New York, NY., 2021).
+Neutze, R. & Moffat, K. Time-resolved structural studies at synchrotrons and X-ray free electron lasers: opportunities and challenges. Current Opinion in Structural Biology 22, 651–659 (2012).
+Neutze, R., Wouts, R., Van Der Spoel, D., Weckert, E. & Hajdu, J. Potential for biomolecular imaging with femtosecond X-ray pulses. Nature 406, 752–757 (2000).
+Chapman, H. N. et al. Femtosecond X-ray protein nanocrystallography. Nature 470, 73–77 (2011).
+Kostov, K. & Moffat, K. Cluster Analysis of Time-Dependent crystallographic data: Direct identification of Time-Independent structural intermediates. Biophysical Journal 100, 440–449 (2011).
+Nango, E., Kubo, M., Tono, K. & Iwata, S. Pump-Probe Time-Resolved Serial Femtosecond Crystallography at SACLA: Current status and data collection Strategies. Applied Sciences 9, 5505 (2019).
+Westenhoff, S., Mésźaros, P. & Schmidt, M. Protein motions visualized by femtosecond time-resolved crystallography: The case of photosensory vs photosynthetic proteins. Current Opinion in Structural Biology 77, 102481 (2022).
+Poddar, H. et al. A guide to time‐resolved structural analysis of light‐activated proteins. FEBS Journal 289, 576–595 (2021).
+Wang, D., Weierstall, U., Pollack, L. & Spence, J. C. H. Double-focusing mixing jet for XFEL study of chemical kinetics. Journal of Synchrotron Radiation 21, 1364–1366 (2014).
+Stagno, J. R.et al Structures of riboswitch RNA reaction states by mix-and-inject XFEL serial crystallography. Nature 541, 242–246 (2017).
+Schmidt, M. Mix and Inject: Reaction Initiation by Diffusion for Time-Resolved Macromolecular Crystallography. Advances in Condensed Matter Physics 2013, 1–10 (2013).
+Brändén, G. & Neutze, R. Advances and challenges in time-resolved macromolecular crystallography. Science 373, (2021).
+Barends, T. R. M., Stauch, B., Cherezov, V. & Schlichting, I. Serial femtosecond crystallography. Nature Reviews Methods Primers 2, (2022).
+Knapp, J. E., Pahl, R., Šrajer, V. & Royer, W. E. Allosteric action in real time: Time-resolved crystallographic studies of a cooperative dimeric hemoglobin. Proceedings of the National Academy of Sciences of the United States of America 103, 7649–7654 (2006).
+Pandey, S. et al. Time-resolved serial femtosecond crystallography at the European XFEL. Nature Methods 17, 73–78 (2020).
+Pande, K. et al. Femtosecond structural dynamics drives the trans/cis isomerization in photoactive yellow protein. Science 352, 725–729 (2016).
+Claesson, E. et al. The primary structural photoresponse of phytochrome proteins captured by a femtosecond X-ray laser. eLife 9, (2020).
+Coquelle, N. et al. Chromophore twisting in the excited state of a photoswitchable fluorescent protein captured by time-resolved serial femtosecond crystallography. Nature Chemistry 10, 31–37 (2017).
+Suga, M. et al. Light-induced structural changes and the site of O=O bond formation in PSII caught by XFEL. Nature 543, 131–135 (2017).
+Šrajer, V. et al. Photolysis of the carbon monoxide complex of myoglobin: Nanosecond Time-Resolved Crystallography. Science 274, 1726–1729 (1996).
+Maestre-Reyna, M. et al. Serial crystallography captures dynamic control of sequential electron and proton transfer events in a flavoenzyme. Nature Chemistry 14, 677–685 (2022).
+Nogly, P. et al. Retinal isomerization in bacteriorhodopsin captured by a femtosecond x-ray laser. Science 361, (2018).
+Levantino, M., Yorke, B. A., Monteiro, D. C. F., Cammarata, M. & Pearson, A. R. Using synchrotrons and XFELs for time-resolved X-ray crystallography and solution scattering experiments on biomolecules. Current Opinion in Structural Biology 35, 41–48 (2015).
+Van Thor, J. J. et al. Signal to noise considerations for single crystal femtosecond time resolved crystallography of the Photoactive Yellow Protein. Faraday Discussions 171, 439–455 (2014).
+Gorel, A., Schlichting, I. & Barends, T. R. M. Discerning best practices in XFEL-based biological crystallography – standards for nonstandard experiments. IUCrJ 8, 532–543 (2021).
+Ursby, T. & Bourgeois, D. Improved estimation of Structure-Factor difference amplitudesfrom poorly accurate data. Acta Crystallographica Section A 53, 564–575 (1997).
+Rould, M. A. & Carter, C. W. Isomorphous difference methods. in Methods in Enzymology 145–163 (2003). doi:10.1016/s0076-6879(03)74007-5.
+Hekstra , D. R. et al. Electric-field-stimulated protein mechanics. Nature 540, 400–405 (2016).
+Genick, U. K. Structure-factor extrapolation using the scalar approximation: theory, applications and limitations. Acta Crystallographica Section D-biological Crystallography 63, 1029–1041 (2007).
+Genick, U. K. et al. Structure of a protein photocycle intermediate by millisecond Time-Resolved crystallography. Science 275, 1471–1475 (1997)..
+Nango, E. et al. A three-dimensional movie of structural changes in bacteriorhodopsin. Science 354, 1552–1557 (2016).
+Wickstrand, C. et al. A tool for visualizing protein motions in time-resolved crystallography. Structural Dynamics 7, (2020).
+Schmidt, M., Rajagopal, S., Ren, Z. & Moffat, K. Application of singular value decomposition to the analysis of Time-Resolved Macromolecular X-Ray data. Biophysical Journal 84, 2112–2129 (2003).
+Rajagopal, S., Schmidt, M., Anderson, S., Ihee, H. & Moffat, K. Analysis of experimental time-resolved crystallographic data by singular value decomposition. Acta Crystallographica Section D-biological Crystallography 60, 860–871 (2004).
+De Zitter, E., Coquelle, N., Oeser, P., Barends, T. R. M. & Colletier, J. P. Xtrapol8 enables automatic elucidation of low-occupancy intermediate-states in crystallographic studies. Communications Biology 5, (2022).
+Grosse‐Kunstleve, R. W., Sauter, N. K., Moriarty, N. W. & Adams, P. D. TheComputational Crystallography Toolbox: crystallographic algorithms in a reusable software framework. Journal of Applied Crystallography 35, 126–136 (2002).
+Schmidt, M. et al. Ligand migration pathway and protein dynamics in myoglobin: A time-resolved crystallographic study on L29W MbCO. Proceedings of the National Academy of Sciences of the United States of America 102, 11704–11709 (2005).
+Afonine, P. V., Grosse‐Kunstleve, R. W., Adams, P. D. & Urzhumtsev, A. Bulk-solvent and overall scaling revisited: faster calculations, improved results. Acta Crystallographica Section D-biological Crystallography 69, 625–634 (2013).
+Takusagawa, F. A combined isotropic and multiple s-shell anisotropic scaling method for multiple data sets. Journal of Applied Crystallography 25, 26–30 (1992).
+Ren, Z. et al. A Molecular Movie at 1.8 Å Resolution Displays the Photocycle of Photoactive Yellow Protein, a Eubacterial Blue-Light Receptor, from Nanoseconds to Seconds. Biochemistry 40, 13788–13801 (2001).
+Ester, M., Kriegel, H., Sander, J. & Xu, X. A density-based algorithm for discovering clusters in large spatial Databases with Noise. Knowledge Discovery and Data Mining 226–231 (1996).
+Mikhaĭlov, B. M. Covalent radii of carbon and the conjugation problem. Bulletin of the Academy of Sciences of the USSR, Division of Chemical Science 9, 1284–1290 (1960).
+Dasgupta, M., Bhowmick, A., Kern, F.  J., Difference Density Tracer: A Tool for Rapid Visualization of Difference Densities in Proteins to Identify Dynamics. Computational Crystallography Newsletter 13,13–19(2023).
+Colletier, J. P. et al. Shoot-and-Trap: Use of specific x-ray damage to study structural protein dynamics by temperature-controlled cryo-crystallography. Proceedings of the National Academy of Sciences of the United States of America 105, 11742–11747 (2008). 
+Dods, R. et al. Ultrafast structural changes within a photosynthetic reaction centre. Nature 589, 310–314 (2021).
+Pearce, N. M. et al. A multi-crystal method for extracting obscured crystallographic states from conventionally uninterpretable electron density. Nature Communications 8, (2017).
