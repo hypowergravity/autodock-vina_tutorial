@@ -2,6 +2,9 @@
 
 This repository contains a tutorial for using AutoDock Vina to dock [Purpurogalline](https://pubchem.ncbi.nlm.nih.gov/compound/5281571) to a zinc-dependent beta-lactamase, along with a reference compound. The tutorial guides users through installation, setup, and running the docking simulations.
 
+Details of the docking can be found on the following [**website**]().
+
+
 ## Table of Contents
 - [Installation](#installation)
 - [Objective](#objective)
